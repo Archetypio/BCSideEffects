@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Side Effects DApp</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="./local.css" type="text/css">
+  <link rel="stylesheet" href="./toolkit-light.min.css" type="text/css">
+  <script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+  <script src="./toolkit.min.js"></script>
+  <script src="./index.js"></script>
+</head>
+
+<body>
+  <div class="container center">
+    <h1>Side Effects Distributed Blockchain App</h1>
+    <hr class="mt-3">
+    <div class="dashhead">
+      <div class="dashhead-titles">
+        <h6 class="dashhead-subtitle">Dashboards</h6>
+        <h3 class="dashhead-title">Overview</h3>
+      </div>
+
+      <div class="dashhead-toolbar">
+        <div class="input-with-icon dashhead-toolbar-item">
+          <input type="text" value=" 12/11 - 12/14" class="form-control" data-provide="datepicker">
+          <span class="icon icon-calendar"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="table-responsive">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th class="center">Side Effect</th>
+            <th class="center">Reported Counts</th>
+          </tr>
+        </thead>
+        <tbody id="sideEffectsTable">
+        </tbody>
+      </table>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 thisform">
+        <div class="input-with-icon">
+          <input type="text" placeholder=" Enter Side Effect" class="form-control" id="sideEffectName" name="sideEffectName" />
+          <span class="icon icon-emoji-sad"></span>
+          <button type="button" class="right btn btn-lg btn-danger" id="sideEffectSubmit">Increase Side Effect Count</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
